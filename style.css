@@ -1,52 +1,125 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: rgb(85, 81, 77);
-    font-size: 16px;
-}
-
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
 
-.logo{
- color: white;
- padding: 0px 100px;
- line-height: 100px;
- font-size: 40px;
- font-weight: bold;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .cart{
+    color: #fff;
+    font-size: 30px;
 }
 
 nav{
-    background: rgb(45, 161, 107);
+    flex: 1;
+    text-align: right;
 }
 
-.item{
-    float: right;
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+nav ul li{
+    display: inline-block;
     margin-right: 20px;
 }
 
-nav .item li{
-display: inline-block;
-line-height: 70px;
-margin: 0 50px;
+a{
+    text-decoration: none;
+    color: #e0f2f3;
+    transition: 0.5s;
+
 }
 
-.font{
+a:hover{
+    background: #5b6b6b;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1300px;
+}
+
+.row{
+   display: flex;
+   align-items: right;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+    color: rgb(65, 9, 97);
+}
+
+
+.col-1 p{
     font-size: 20px;
+    margin: 25px 0;
+    line-height: 30px;
+    color: rgb(248, 244, 243);
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    background: #d18833;
+    color: #000;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #fff;
+}
+
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),transparent), url(images/360_F_288654557_h0hiDv7cdEkdfKOIeF9wrSk4P6YH4ZMc.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0, 8%;
     position: relative;
-    align-items: end;
-    color: white;
-
+    width: 1366px;
+    height: 500px;
+    
 }
 
-footer{
-    background-color: rgb(100, 37, 158);
-    font-style: normal;
-    margin-inline: 2px;
-
-
+.header .row{
+    margin: 50px;
 }
+
+
+
+
