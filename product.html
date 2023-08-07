@@ -5,13 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="menu.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalise.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <!----header-->
+    <div>
+        <div class="mobile">
+            <div class="navbar-link">
+                <div class="logo"><a href="#">Sales PerFect</a></div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>
+                        <a href="product.html">Product
+                            <!--<ul class="dropdown">
+                                <li><a href="men.html">Male Product</a></li>
+                                <li><a href="women.html">Female Product </a></li>
+                                <li><a href="shoes.html">Shoes Product</a></li>
+                            </ul>--->
+                        </a>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropmenu ">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="product.html">Product
+                        <!--<ul class="dropdown">
+                            <li><a href="men.html">Male Product</a></li>
+                            <li><a href="women.html">Female Product </a></li>
+                            <li><a href="shoes.html">Shoes Product</a></li>
+                        </ul>--->
+                    </a>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----header-
     <div class="navbar" id="sticky">
         <nav>
             <ul>
@@ -373,6 +418,23 @@
             </div>
         </footer>
     </main>
+
+
+    <!--<script>
+        const toggleBtn = document.quarySelector(".toggle-button");
+        const toggleBtnIcon = document.quarySelector(".toggle-button i");
+        const dropDownMenu = document.quarySelector(".dropmenu");
+
+        toggleBtn.onClick = fucntion ()
+        {
+            dropDownMenu.cassList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        };
+    </script>--->
     
 </body>
 </html>

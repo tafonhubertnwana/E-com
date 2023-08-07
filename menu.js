@@ -1,4 +1,4 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
+/*const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLink = document.getElementsByClassName('navbar-link')[0]
 
 toggleButton.addEventListener('click', () => {
@@ -13,4 +13,18 @@ const openNav = () => {
 
 const closeNav = () => {
     document.getElementById("mobile-nav").style.width = "0%";
-}
+}*/
+
+
+const toggleBtn = document.querySelector(".toggle-button");
+const toggleBtnIcon = document.querySelector(".toggle-button ");
+const dropDownMenu = document.querySelector(".dropmenu");
+
+toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains()
+
+    toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+};
