@@ -152,8 +152,8 @@ body{
     right: 2rem;
     top: 60px;
     width: 300px;
-    background: rgb(56, 55, 55);
-    backdrop-filter: blur(100px);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     height: 0;
@@ -167,10 +167,10 @@ body{
 
 
 @media (max-width: 992px) {
-    body{
-        font-size: 20px
-    }
 
+    body{
+        font-size: 20px;
+    }
     .navbar-link ul{
         display: none;
     }
