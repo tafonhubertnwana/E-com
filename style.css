@@ -81,8 +81,12 @@ body{
 }
 
 
+
+/*mOBILE*/
+
 .navbar-link li{
     list-style: none;
+    display: none;
 }
 
 .navbar-link a{
@@ -116,6 +120,25 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.navbar-link .logo a{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 50px;
+    color: transparent;
+    background: url(images/images.jpeg);
+    -webkit-background-clip: text;
+    background-position: 5px 5px;
+    animation: back 200s linear infinite;
+}
+
+@keyframes back{
+100%{
+        background-position: 1000px 0;
+    }
+}
+
 
 
 .navbar-link ul{
@@ -187,86 +210,6 @@ body{
         height: 240px; 
      }
 }
-
-
-
-
-/*.navbar-link .toggle-button{
-    color: rgb(5, 5, 5);
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.toggle-button .fa-bars{
-    background-color: yellow;
-    color: rgb(15, 15, 15);
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-}
-
-
-.dropmenu ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.dropmenu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background-color: tomato;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: heigh 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
-
-}
-
-.dropmenu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
-    
-.dropmenu.open{
-    height: 240px;
-}
-
-
-
-@media (max-width: 992) {
-    .mobile .navbar-link, {
-        display: none;
-    }
-
-    .toggle-button{
-        display: block;
-    }
-
-    .dropmenu{
-        display: block;
-    }
-}
-
-
-@media (max-width: 992) {
-    .dropdown{
-        left: 2rem;
-        width: unset;
-    }
-}
-
-
-
-
 
 
 
@@ -627,6 +570,7 @@ p{
     margin-top: 5%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 5%;
 }
 
 .paragraph h1{
@@ -1201,9 +1145,36 @@ background-color: #f7f6f6;
 
 /*Contact Page*/
 
+#contactus .contactus{
+    background-image: url(images/contacr.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 0;
+    filter: grayscale(50%);
+}
+
+#contactus .contactus{
+    text-align: center;
+    font-size: large;
+    color: white;
+    line-height: 1.6;
+}
+
+#contactus .contactus h1{
+    color: white;
+    font-size: 40px;
+}
+
+#contactus .contactus p{
+    font-size: 20px;
+}
+
 #contact{
-    background-color: #6d6b6b;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 #contact .contact{
@@ -1213,9 +1184,12 @@ background-color: #f7f6f6;
 }
 
 .contact section{
+    color: white;
     padding: 0 3%;
     margin: 0 1%;
     text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 .contact section .fa-solid{
@@ -1225,10 +1199,6 @@ background-color: #f7f6f6;
 
 .contact section .fa-location-dot{
     color: blue;
-}
-
-.contact section .fa-clock{
-    color:rgb(82, 68, 25)
 }
 
 .contact section .fa-phone{
@@ -1245,6 +1215,7 @@ background-color: #f7f6f6;
     text-align: center;
     line-height: 1.6;
     width: 200px; 
+    color: white;
 }
 
 .contact section a p{
@@ -1255,8 +1226,9 @@ background-color: #f7f6f6;
 #contact form{
     padding-top: 3%;
     padding-bottom: 5%;
-    padding-left: 34%;
-    padding-right: 34%;
+    padding-left: 30%;
+    padding-right: 30%;
+
 }
 
 #contact form .contactinfo h4{
@@ -1271,11 +1243,6 @@ background-color: #f7f6f6;
     padding: 10px;
     border: 1px solid rgb(8, 8, 8);
     border-radius: 50px
-}
-
-#contact .contactus {
-    text-align: center;
-    line-height: 1.6;
 }
 
 #contact form .contactinfo textarea{
@@ -1338,6 +1305,29 @@ background-color: #f7f6f6;
 
 
 /*about page*/
+#knowus{
+    background: url(images/images\ \(1\)blog.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(15px);
+    filter: grayscale(100%);
+}
+
+#knowus{
+    padding: 4% 0;
+    text-align: center;
+}
+
+#knowus h1{
+    color: white
+}
+
+
+.au{
+    width: 100%;
+    height: 100%;
+}
 
 .about h2{
     text-align: center;
@@ -1442,7 +1432,6 @@ background-color: #f7f6f6;
 
 .single-product .row{
     display: flex;
-
 }
 
 .single-product .row .colunm1 img{
@@ -1551,6 +1540,7 @@ background-color: #f7f6f6;
 
     #sticky {
         display: none;
+    }
 
     .col-1 h1{
         font-family: 'Times New Roman', Times, serif;
@@ -1634,83 +1624,6 @@ background-color: #f7f6f6;
         display: none;
     }
 
-   /* .mobile{
-        display:inline-block;
-        justify-content: ;
-    }
-    
-    .mobile ul {
-        display: flex;
-        padding-left: 10%;
-        padding: 0 10px;
-        font-size:20px;
-    }
-
-    .mobile .toggle-button {
-        margin-right: 2px;
-        top: 1px;
-        background-color: yellowgreen;
-    }
-
-    .mobile .toggle-button{
-        display:flex;     
-    }
-
-    .mobile .toggle-button{
-        font-size: 30px;
-    }
-
-    .mobile .toggle-button .fa-bar{
-        max-width: 1000px;
-        padding-left: 40px;
-        padding-right: 60px;
-        color: turquoise;
-    }
-
-    .mobile .navbar-link{
-        display:none ;
-        width: 100%;
-    }
-
-    .mobile {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .mobile .navbar-link ul{
-        width: 100%;
-        flex-direction: column;
-        line-height: 2.5;
-        
-    }
-
-    .mobile .navbar-link  li{
-        text-align: right;
-    }
-
-    .mobile .navbar-link li a{
-        padding: 5px 10px;
-    }
-
-    .navbar-link.active{
-        display: flex;
-        background-color: transparent;
-    }
-
-    .section-navbar{
-        display: flex;
-    }
-
-    .section-navbar .form {
-        margin-left: 2%;
-    }*/ 
-
-
-
-
-
-
-
     .form input {
         background: transparent;
         border: 0px;
@@ -1760,7 +1673,6 @@ background-color: #f7f6f6;
     .cart .cartlog {
         text-align: center;
         margin: 2% 1%;
-        background-color: #c5c2b0;
         padding: 4% 2%
     }
 
@@ -1774,8 +1686,8 @@ background-color: #f7f6f6;
     /*product section*/
     .paragraph {
         margin-top: 80px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .feature{
@@ -1788,7 +1700,6 @@ background-color: #f7f6f6;
         padding: 2px 6px;
         cursor: pointer;
         margin: 5px 2px;
-        background-color: #fff5c6;
     }
     
     #discount .bold h3 {
@@ -1814,7 +1725,6 @@ background-color: #f7f6f6;
         padding: 2px 6px;
         cursor: pointer;
         margin: 5px 2px;
-        background-color: #fff5c6;
     }
 
 
@@ -1874,23 +1784,87 @@ background-color: #f7f6f6;
     }
 
 
-    /*contact us*/
+       /*contact us*/
 
     #contact form {
-        margin: 0 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     #contact .contact {
-        display: block;
+        padding: 2% 0;
+        display: inline;
+    }
+
+    .contact section {
+        color: black;
+        padding: 0 3%;
+        margin: 6% 1%;
+        text-align: left;
+        background: none;
+    }
+
+    #contact form .contactinfo input {
+        width: 400px;
+    }
+
+    #contact form .contactinfo textarea {
+        width: 400px;
+        height: 200px;
     }
 
     .contact section p {
-        margin-bottom: 30px;
         padding-top: 10px;
-        padding-bottom: 20px;
-        text-align: center;
-        padding-left: 20%;
+        padding-bottom: 10px;
+        text-align: left;
+        line-height: 1.6;
+        color: black;
+        width: 400px;
+    }
+
+ 
+    /*about*/
+
+   .about section {
+        padding: 0 10%;
     }
     
+    .aboutus {
+        display: inline;
+    }
+
+    .aboutus .owners {
+        margin: 50px 30px
+    }
+
+    .about h2::before {
+        position: absolute;
+        content: '';
+        bottom: 22px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 130px;
+    }
+
+    .mission h2::before {
+        position: absolute;
+        content: '';
+        bottom: 20px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 179px;
+    }
+
+    .mission h3::before {
+        position: absolute;
+        content: '';
+        bottom: 14px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 180px;
+    }
 
 }
