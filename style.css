@@ -227,7 +227,7 @@ body{
 }
 
 .section-navbar{
-    background-color: rgb(210, 218, 217);
+    background-color: rgb(236, 229, 162);
     padding: 10px 0;
     display: none;
 }
@@ -1642,7 +1642,7 @@ ul{
     .section-navbar {
         display: flex;
         justify-content: space-between;
-        background-color: #f0efef;
+        background-color: #eedd91;
     }
 
     nav ul {
