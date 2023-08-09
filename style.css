@@ -8,6 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /*Header Section*/
 /*computer Navbar*/
 
@@ -20,7 +21,7 @@ body{
 #search{
     width: 100%;
     height: 100%;
-    background-color: #e0e0d8;
+    background-color: #fff7f7;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -30,9 +31,9 @@ body{
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     padding-left: 5px;
-    font-size: 50px;
+    font-size: 40px;
     color: transparent;
-    background: url(images/10-Canadian-Online-Shopping-Statistics-You-Didnt-Know.jpg);
+    background: url(images/blog.jpeg);
     -webkit-background-clip: text;
     background-position: 5px 5px;
     animation: back 200s linear infinite;
@@ -45,11 +46,11 @@ body{
 }
 
 #search .form{
-    width: 350px;
+    width: 500px;
     border: 2px solid rgb(0, 0, 0);
     padding-left: 5px;
     border-radius: 50px;
-    margin-left: 15%;
+    margin-left: 1%;
     padding-top: 15px;
     padding-bottom: 5px;
 }
@@ -58,26 +59,27 @@ body{
     background: transparent;
     border: 30px;
     outline:10px;
-    width: 300px;
+    width: 450px;
 }
 
 .form .fa-solid {
-    color: black;
+    color: rgb(82, 15, 238);
 }
 
 #search ul{
-    margin-left: 20%;
+    margin-left: 2%;
     padding: 0 10px;
     font-size: 30px;
 }
 
 #search ul .cart-1{
     padding: 10px 10px;
+    color: rgb(8, 8, 8);
 }
 
 #search ul .cart-1:hover{
     transform: translateX(5px);
-    color: rgb(85, 82, 5);
+    color: rgb(10, 25, 245);
 }
 
 
@@ -99,11 +101,22 @@ body{
     color: #6d6b6b;
 }
 
+
+
 /*mobile*/
 
 .mobile{
     position: relative;
     padding: 0 2rem;
+    display: none;
+}
+
+.phone{
+    top: 0;
+    bottom: 0;
+    position: sticky;
+    z-index: 99999;
+    background-color: #0c0c0c;  
 }
 
 .navbar-link{
@@ -127,7 +140,7 @@ body{
     padding-left: 5px;
     font-size: 50px;
     color: transparent;
-    background: url(images/images.jpeg);
+    background: url(images/blog.jpeg);
     -webkit-background-clip: text;
     background-position: 5px 5px;
     animation: back 200s linear infinite;
@@ -138,8 +151,6 @@ body{
         background-position: 1000px 0;
     }
 }
-
-
 
 .navbar-link ul{
     display: flex;
@@ -152,6 +163,7 @@ body{
     cursor: pointer;
     display: none;
 }
+
 
 /*dropmenu*/
 
@@ -170,12 +182,12 @@ body{
 
 .dropmenu{
     color: white;
-    display: none;
+    display: block;
     position: absolute;
     right: 2rem;
     top: 60px;
     width: 300px;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -187,96 +199,6 @@ body{
    height: 240px; 
 }
 
-
-
-@media (max-width: 992px) {
-
-    body{
-        font-size: 20px;
-    }
-    .navbar-link ul{
-        display: none;
-    }
-
-    .navbar-link .toggle-button{
-        display: block;
-    }
-
-    .dropmenu{
-        display: block;
-    }
-
-    .dropmenu.open{
-        height: 240px; 
-     }
-}
-
-
-
-/*Navbar for Mobile
-
-#navbar{
-    display: flex;
-}
-
-#mobile{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content:space-between;
-}
-
-#mobile p{
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding-left: 5px;
-    font-size: 50px;
-    color: transparent;
-    background: url(images/10-Canadian-Online-Shopping-Statistics-You-Didnt-Know.jpg);
-    -webkit-background-clip: text;
-    background-position: 5px 5px;
-    animation: back 200s linear infinite;
-}
-
-@keyframes back{
-100%{
-        background-position: 1000px 0;
-    }
-}
-
-.mobile .navbar-link ul{
-    display: flex;
-    padding-top: 10px;
-    background-color: red;
-}
-
-.mobile .navbar-link li{
-    list-style: flex;
-}
-
-.mobile .navbar-link li a{
-    text-decoration: none;
-    color:#000;
-    padding: 10px;
-    text-align: center;
-}
-
-
-.mobile .navbar-link .toggle-button {
-    padding-right: 20px;
-    padding-top: 15px;
-}
-
-.mobile .toggle-button .fa-bars{
-    position: absolute;
-    top: 40px;
-    left: 470px;
-    width: 30px;
-    height: 20px; 
-    font-size: 30px; 
-    color: rgb(7, 7, 7); 
-}
-*/
 
 /*Mobile Navbar two*/
 
@@ -326,7 +248,6 @@ body{
 }
 
 
-
 /*second navbar on pc*/
 
 #sticky{
@@ -339,7 +260,7 @@ body{
 }
 
 .navbar{
-    background-color: #aa7229;
+    background-color: #faf9f8;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -349,7 +270,7 @@ body{
 nav{
     flex: 1;
     text-align: center;
-    background-color: rgb(242, 243, 199);
+    background-color: rgb(252, 252, 249);
     padding-left: 100px;
 }
 
@@ -379,7 +300,6 @@ nav ul li a{
     padding-right: 20px;
 }
 
-
 nav ul li a:hover{
     position: relative;
     color: #b49a03;
@@ -400,7 +320,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 30px;
 }
-
 
 
 /*dropdown for pc*/
@@ -453,37 +372,38 @@ p{
 }
 
 .col-1{
-    margin:0 20%;
+    padding:8% 0;
+    margin:0 2%;
     display: block;
-    padding-bottom: 10px;
 }
 
 .col-1 h1{
     font-family:monospace;
     display: contents;
-    font-size: 70px;
-    line-height: 1.6;
+    font-size: 50px;
     padding: 0;
-    color: rgba(29, 29, 28, 0.521);
-    margin-bottom: 20px;
-    font-weight: 600;
-    text-align: left;
+    color: rgb(8, 8, 8);
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-align: center;
 }
 
-.col-1 span{
-    padding-left: 30px;
-    font-family: lucida console;
-    font-size: 35px;
-    color: rgb(131, 110, 71);
+.col-1 h3{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: rgb(216, 181, 27);
 }
 
 .col-1 p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    margin: 5% 0;
+    margin: 3% 0;
     line-height: 30px;
-    color: rgb(7, 7, 7);
+    color: rgba(14, 13, 13, 0.4);
     text-align: left;
+    
 }
 
 .col-1 .btn{
@@ -496,7 +416,7 @@ p{
     border-radius: 50px;
     padding: 5px 0;
     margin-left: 4%;
-    margin-right: 79%;
+    margin-right: 85%;
     transition: 0.5s;
     text-align: center;
 }
@@ -505,7 +425,6 @@ p{
     background: #030303;
     color: white;
 }
-
 
 
 /*cart layout*/
@@ -560,7 +479,6 @@ p{
 .cart .cartlog .fa-phone-volume{
     color:rgb(59, 61, 190)
 }
-
 
 
 /*Featurecatergory*/  
@@ -719,7 +637,6 @@ p{
 }
 
 
-
 /*Women Fashion*/
 
 article .paragraph p{
@@ -760,6 +677,7 @@ article .paragraph p{
 .womenproduct:hover{
     transform: translate(5px);
 }
+
 
 /*Banner 2*/
 
@@ -838,6 +756,22 @@ article .paragraph p{
     font-weight: 700;
 }
 
+.discount button{
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.discount button a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.discount button:hover{
+    background-color: #868383;
+}
 
 
 /*Banner 4*/
@@ -879,7 +813,7 @@ article .paragraph p{
 #news{
     display: flex;
     justify-content: space-evenly;
-    background-color: #000;
+    background-color: #424141;
 }
 
 footer .newsletter{
@@ -1059,6 +993,26 @@ ul{
 
 /*Product page*/
 
+.productbanner{
+    background-image: url(images/banner-online-shopping-cover-image-purchased-from-adobe.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 0;
+    filter: grayscale(70%);
+    text-align: center;
+}
+
+.productbanner h2{
+    font-size: 40px;
+    color: white;
+}
+
+.productbanner p{
+    font-size: 18px;
+    line-height: 2;
+}
+
 .view{
     text-align: center;
     padding: 0 46%;
@@ -1066,11 +1020,10 @@ ul{
 }
 
 .viewmore a{
-    background-color: #bcc07d;
+    background-color: #696968;
     text-decoration: none;
     padding: 10% 5%;
-    color: rgb(8, 8, 8);
-    
+    color: rgb(8, 8, 8);  
 }
 
 
@@ -1078,9 +1031,9 @@ ul{
 
 .blog{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     padding-bottom: 3%;
-    color: red;
+    color: white;
 }
 
 .blog section{
@@ -1089,12 +1042,12 @@ ul{
     background-repeat: no-repeat;
     background-image: url(images/finance-elements-frame.jpg);
     padding: 3% 0;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     
 }
 
 .blog section p{
-    color: #f8f8f8;
+    color: #070707;
 }
 
 #blog{
@@ -1136,9 +1089,9 @@ ul{
 }
 
 #blog .blogitems img{
-width: 400px;
-height: 400px;
-background-color: #f7f6f6;
+    width: 350px;
+    height: 400px;
+    background-color: #f7f6f6;
 
 }
 
@@ -1150,13 +1103,18 @@ background-color: #f7f6f6;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5% 0;
-    filter: grayscale(50%);
+    padding: 3% 0;
+    filter: grayscale(100%);
+}
+
+.contac{
+    text-align: center;
+    padding-top: 40px;
 }
 
 #contactus .contactus{
     text-align: center;
-    font-size: large;
+    font-size: 40px;
     color: white;
     line-height: 1.6;
 }
@@ -1266,7 +1224,6 @@ background-color: #f7f6f6;
 
 
 /*Men Page*/
-
 /*Men 2 Page*/
 
 .option {
@@ -1277,7 +1234,7 @@ background-color: #f7f6f6;
 }
 
 .option a{
-    background-color: #b1ab59;
+    background-color: #888787;
     margin: 0 2%;
     padding: 0 5%;
     padding-top: 3%;
@@ -1299,7 +1256,7 @@ background-color: #f7f6f6;
     background-color: white;
 }
 
-.option a:active::after{
+.option a::after{
     background-color: #c91616;
 }
 
@@ -1311,7 +1268,7 @@ background-color: #f7f6f6;
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(15px);
-    filter: grayscale(100%);
+    filter: grayscale(70%);
 }
 
 #knowus{
@@ -1320,9 +1277,14 @@ background-color: #f7f6f6;
 }
 
 #knowus h1{
-    color: white
+    color: white;
+    font-size: 40px;
 }
 
+#knowus p{
+    font-size: 20px;
+    line-height: 1.6;
+}
 
 .au{
     width: 100%;
@@ -1419,7 +1381,6 @@ background-color: #f7f6f6;
     transform: translateY(0);
     color: rgb(7, 7, 7);
 }
-
 
 .owners img{
     width: 180px;
@@ -1518,8 +1479,6 @@ background-color: #f7f6f6;
 
 
 
-
-
 /*Responsive on tablet*/
 
 @media screen and (max-width: 800px){
@@ -1542,6 +1501,14 @@ background-color: #f7f6f6;
         display: none;
     }
 
+    #mobile{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: sticky;
+        z-index: 99999;
+    }
+
     .col-1 h1{
         font-family: 'Times New Roman', Times, serif;
         font-size: 50px;
@@ -1552,11 +1519,11 @@ background-color: #f7f6f6;
     }
 
     .col-1 .btn {
-        font-size: 15px;
+        font-size: 20px;
         border-radius: 30px;
         padding: 4px;
-        margin-left: 40%;
-        margin-right: 40%;
+        margin-left: 2%;
+        margin-right: 70%;
     }
 
     .cart {
@@ -1630,41 +1597,58 @@ background-color: #f7f6f6;
         outline: 0px;
     }
 
+    body{
+        font-size: 20px;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .navbar-link ul{
+        display: none;
+    }
+
+    .navbar-link .toggle-button{
+        display: block;
+        font-size: 35px;
+        color: #000;
+    }
+
+    .dropmenu{
+        display: block;
+        z-index: 999;
+    }
+
+    .dropmenu.open{
+        height: 240px; 
+    }
 
     .section-navbar .form {
-        width: px;
+        width: 280px;
         border: 2px solid rgb(8, 8, 8);
         
     }
 
-
     .form input {
-        width: 250px;
+        width: 200px;
     }
 
+    .section-navbar .form .fa-solid {
+        font-size: 20px;
+        color: black;
+        margin-left: 10%;
+    }
 
+    .section-navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f0efef;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    nav ul {
+        display: none;
+    }
 
     .cart {
         justify-content: space-evenly;
@@ -1677,10 +1661,11 @@ background-color: #f7f6f6;
     }
 
     .section-navbar ul {
-        font-size: 20px;
+        font-size: 29px;
         padding-top: 10px;
-        padding-left: 5%;
+        padding-left: 0;
     }
+
 
     
     /*product section*/
@@ -1727,6 +1712,14 @@ background-color: #f7f6f6;
         margin: 5px 2px;
     }
 
+    #discount .bold {
+        margin-top: 10%;
+    }
+
+    .paragraph h1 {
+        font-size: 40px;
+    }
+
 
 
     /*footer*/
@@ -1764,12 +1757,13 @@ background-color: #f7f6f6;
     /*Product page*/
 
     .view {
-        padding: 0 40%;
+        padding: 0 35%;
     }
 
     .option {
-        padding: 0 35%;
+        padding: 0 30%;
     }
+
 
     /*blog*/
 
@@ -1784,7 +1778,8 @@ background-color: #f7f6f6;
     }
 
 
-       /*contact us*/
+
+    /*contact us*/
 
     #contact form {
         padding-left: 5%;

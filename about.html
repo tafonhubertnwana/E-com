@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="menu.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalise.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
+    <main>
+        <!----Navbar for Mobile---->
+        <div>
+            <div class="mobile">
+                <div class="navbar-link">
+                    <div class="logo"><a href="#">E-best.Inc</a></div>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="product.html">Product
+                                <!--<ul class="dropdown">
+                                    <li><a href="men.html">Male Product</a></li>
+                                    <li><a href="women.html">Female Product </a></li>
+                                    <li><a href="shoes.html">Shoes Product</a></li>
+                                </ul>--->
+                            </a>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
 
-       <!----Navbar for Mobile---->
-       <div>
-        <div class="mobile">
-            <div class="navbar-link">
-                <div class="logo"><a href="#">Sales PerFect</a></div>
-                <ul>
+                <div class="dropmenu ">
                     <li><a href="home.html">Home</a></li>
                     <li>
                         <a href="product.html">Product
@@ -30,50 +51,31 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="toggle-button">
-                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-
-            <div class="dropmenu ">
-                <li><a href="home.html">Home</a></li>
-                <li>
-                    <a href="product.html">Product
-                        <!--<ul class="dropdown">
-                            <li><a href="men.html">Male Product</a></li>
-                            <li><a href="women.html">Female Product </a></li>
-                            <li><a href="shoes.html">Shoes Product</a></li>
-                        </ul>--->
-                    </a>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </div>
         </div>
-    </div>
 
-    <!----header-->
-    <div class="navbar" id="sticky">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li>
-                    <a href="product.html">Product
-                        <ul class="dropdown">
-                            <li><a href="men.html">Male Product</a></li>
-                            <li><a href="women.html">Female Product </a></li>
-                            <li><a href="shoes.html">Shoes Product</a></li>
-                        </ul>
-                    </a>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+        <!----header-->
+        <div class="navbar" id="sticky">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>
+                        <a href="product.html">Product
+                            <ul class="dropdown">
+                                <li><a href="men.html">Male Product</a></li>
+                                <li><a href="women.html">Female Product </a></li>
+                                <li><a href="shoes.html">Shoes Product</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
 
     
     <!---about-->
@@ -83,11 +85,43 @@
             <h1>WHO WE ARE</h1>
             <P>Get to know us better</P>
         </div>
+        <div class="cart">
+            <div class="cartlog">
+                <p><i class="fa-solid fa-check"></i>
+                    <span>
+                        <h6>Quality Products</h6>
+                    </span>
+                </p>
+            </div>
+            <div class="cartlog">
+                <p>
+                    <span>
+                        <i class="fa-solid fa-truck"></i> 
+                    </span>
+                    <h6>Free Shipping</h6>
+                </p>
+            </div>
+            <div class="cartlog">
+                <p><i class="fa-solid fa-right-left"></i>
+                    <span>
+                        <h6>20-Day Returns</h6>
+                    </span>
+                </p>
+            </div>
+            <div class="cartlog">
+                <p><i class="fa-solid fa-phone-volume"></i>
+                    <span>
+                        <h6>24/7 Support</h6>
+                    </span>
+                </p>
+            </div>
+        </div>
+    
         <div class="au">
             <div class="about">
                 <h2>About Us</h2>
                 <section>
-                    <p>LESBest is a lifestyle retailer dedicated to inspiring customers through a unique combination of product, creativity and cultural understanding. it was founded in 2022 by Tafon Hubert Nwana in Douala. We are currenly base at Bepanda-Ambiance Douala. We offer experient reatail enviroments and a well curated mix of on-trend women's and men's clothes, and also good and quality shoes for both male and female and other accessories. Visit our store now, where all are welcome and there's always something new to see, or shop online at Lesbest.com and get free shipping and quality products. For special offers, one-of-a-kind prizes and more, download the LESBest app and join LESBest Rewards!.</p>
+                    <p>E-best.Inc is a lifestyle retailer dedicated to inspiring customers through a unique combination of products, creativity and cultural understanding. it was founded in 2022 by Tafon Hubert Nwana in Douala. We are currenly base at Bepanda-Ambiance Douala. We offer experient reatail enviroments and a well curated mix of on-trend women's and men's clothes, and also good and quality shoes for both male and female and other accessories. Visit our store now, where all are welcome and there's always something new to see, or shop online at E-best.com and get free shipping and quality products. For special offers, one-of-a-kind prizes and more, download the E-Best app and join E-Best Rewards!.</p>
                 </section>
             </div>
             <div class="mission">
@@ -101,7 +135,7 @@
                     <img src="images/WhatsApp Image 2023-07-28 at 11.04.50.jpg">
                     <h2>Tafon Hubert Nwana</h2>
                     <p>
-                        Founder of LESBest (LB) <br>
+                        Founder of E-best.Inc<br>
                         E-mail: tafonsoftwarespecialist@gmail.com <br>
                         Tel: (+237) 670-745-697
                     </p>
@@ -110,7 +144,7 @@
                     <img src="images/WhatsApp Image 2023-07-28 at 11.06.17.jpg">
                     <h2>Hortensia Tabeh</h2>
                     <p>
-                        CEO of LESBest (LB) <br>
+                        CEO of E-Best<br>
                         E-mail: hortensiatabeh@gmail.com <br>
                         Tel: (+237) 651-055-983
                     </p>
@@ -199,7 +233,7 @@
             </div>
             <div class="copyright">
                 <p>copyright2023 @ Tafon Hubert. Design by<br>
-                    LESbest.com
+                    E-best.com
                 </p> 
             </div>
         </footer>
