@@ -580,7 +580,7 @@ p{
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 20px;
-    background-color: #f7f6f6;
+    background-color: #f3e39b;
 }
 
 .product{
@@ -660,7 +660,7 @@ article .paragraph p{
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 20px;
-    background-color: #f7f6f6;
+    background-color: #f3e39b;
 
 }
 
@@ -999,7 +999,6 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5% 0;
-    filter: grayscale(70%);
     text-align: center;
 }
 
