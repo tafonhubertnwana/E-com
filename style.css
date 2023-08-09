@@ -813,7 +813,7 @@ article .paragraph p{
 #news{
     display: flex;
     justify-content: space-evenly;
-    background-color: #424141;
+    background-color: #080808;
 }
 
 footer .newsletter{
@@ -867,7 +867,7 @@ footer .newsletter .form-1 input{
 }
 
 footer .newsletter .form-1 .fa-solid{
-    color: hwb(256 9% 23%);
+    color: hwb(257 95% 2%);
 }
 
 #news .payment{
