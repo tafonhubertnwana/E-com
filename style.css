@@ -580,7 +580,7 @@ p{
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 20px;
-    background-color: #f3e39b;
+    background-color: #f7ecbc;
 }
 
 .product{
@@ -598,7 +598,7 @@ p{
 }
 
 .stars{
-    color: rgb(236, 236, 16);
+    color: yellow;
     letter-spacing: -4px;
 }
 
@@ -660,7 +660,7 @@ article .paragraph p{
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 20px;
-    background-color: #f3e39b;
+    background-color: #f7ecbc;
 
 }
 
@@ -836,7 +836,7 @@ footer .newsletter h4::before{
     content: '';
     left: 0;
     bottom: -10px;
-    background-color: #e6120b;
+    background-color: #fffefe;
     height: 2px;
     box-sizing: border-box;
     width: 100px;
@@ -887,7 +887,7 @@ footer .newsletter .form-1 .fa-solid{
     content: '';
     left: 0;
     bottom: 30px;
-    background-color: #88022e;
+    background-color: #fdfdfd;
     height: 2px;
     box-sizing: border-box;
     width: 100px;
@@ -919,7 +919,7 @@ footer .newsletter .form-1 .fa-solid{
     content: '';
     left: 0;
     bottom: -10px;
-    background-color: #88022e;
+    background-color: #fcf9fa;
     height: 2px;
     box-sizing: border-box;
     width: 70px;
