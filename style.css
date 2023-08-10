@@ -1866,3 +1866,301 @@ ul{
     }
 
 }
+
+
+@media screen and (max-width: 450px){
+    
+    /*navbar*/
+
+    body {
+         width: fit-content;
+    }
+    #search p{
+        padding-top: 10px;
+        display: none;
+    }
+
+    #search .form{
+        display: none;
+    }
+
+    #search ul .cart-1{
+        display: none;
+    }
+
+    .form input {
+        background: transparent;
+        border: 0px;
+        outline: 0px;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .navbar-link ul{
+        display: none;
+    }
+
+    .navbar-link .toggle-button{
+        display: block;
+        font-size: 35px;
+        color: #000;
+    }
+
+    .dropmenu{
+        display: block;
+        z-index: 999;
+    }
+
+    .dropmenu.open{
+        height: 240px; 
+    }
+
+    .section-navbar .form {
+        width: 280px;
+        border: 2px solid rgb(8, 8, 8);
+        
+    }
+
+    .form input {
+        width: 200px;
+    }
+
+    .section-navbar .form .fa-solid {
+        font-size: 20px;
+        color: black;
+        margin-left: 10%;
+    }
+
+    .section-navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #eedd91;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .cart {
+        justify-content: space-evenly;
+    }
+
+    .cart .cartlog {
+        text-align: center;
+        margin: 2% 1%;
+        padding: 4% 2%
+    }
+
+    .section-navbar ul {
+        font-size: 29px;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    .col-1 h3 {
+        padding-left: 5px;
+    }
+
+
+    
+    /*product section*/
+    .paragraph {
+        margin-top: 80px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .feature{
+        padding: 0 25px;
+        justify-content: space-around;
+    }
+
+    .feature .product {
+        min-width: 225px;
+        padding: 2px 6px;
+        cursor: pointer;
+        margin: 5px 2px;
+    }
+    
+    #discount .bold h3 {
+        line-height: none;
+        font-size: 40px;
+        font-weight: 800;
+        color: rgb(196, 131, 131);
+    }
+
+    #discount .bold p {
+        align-text: center;
+        color: #2c2525;
+        font-size: 20px;
+    }
+
+    .womenfeature{
+        padding: 0 25px;
+        justify-content: space-around;
+    }
+
+    .womenfeature .womenproduct {
+        min-width: 225px;
+        padding: 2px 6px;
+        cursor: pointer;
+        margin: 5px 2px;
+    }
+
+    #discount .bold {
+        margin-top: 10%;
+    }
+
+    .paragraph h1 {
+        font-size: 40px;
+    }
+
+
+
+    /*footer*/
+
+    #news {
+        display: block;
+    }
+
+    footer .newsletter {
+        margin-left: 2%;
+    }
+
+    footer .newsletter h4{
+        padding-top: 50px;
+    }
+
+    footer .newsletter .form-1{
+        border: 2px solid white;
+    }
+
+    #news .payment {
+        margin-left: 2%;
+        padding-bottom: 5%;
+    }
+
+    #news .payment h3 {
+        line-height: 4;
+    }
+
+    #news .payment h3::before {
+        bottom: 15px;
+    }
+
+
+    /*Product page*/
+
+    .view {
+        padding: 0 35%;
+    }
+
+    .option {
+        padding: 0 30%;
+    }
+
+
+    /*blog*/
+
+    #blog {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #blog .blogitems img {
+        width: 200px;
+        height: 280px;
+    }
+
+
+
+    /*contact us*/
+
+    #contact form {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #contact .contact {
+        padding: 2% 0;
+        display: inline;
+    }
+
+    .contact section {
+        color: black;
+        padding: 0 3%;
+        margin: 6% 1%;
+        text-align: left;
+        background: none;
+    }
+
+    #contact form .contactinfo input {
+        width: 400px;
+    }
+
+    #contact form .contactinfo textarea {
+        width: 400px;
+        height: 200px;
+    }
+
+    .contact section p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        line-height: 1.6;
+        color: black;
+        width: 400px;
+    }
+
+ 
+    /*about*/
+
+   .about section {
+        padding: 0 10%;
+    }
+    
+    .aboutus {
+        display: inline;
+    }
+
+    .aboutus .owners {
+        margin: 50px 30px
+    }
+
+    .about h2::before {
+        position: absolute;
+        content: '';
+        bottom: 22px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 130px;
+    }
+
+    .mission h2::before {
+        position: absolute;
+        content: '';
+        bottom: 20px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 179px;
+    }
+
+    .mission h3::before {
+        position: absolute;
+        content: '';
+        bottom: 14px;
+        background-color: #88022e;
+        height: 3px;
+        box-sizing: border-box;
+        width: 180px;
+    }
+
+}
